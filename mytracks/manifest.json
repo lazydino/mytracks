@@ -1,0 +1,54 @@
+{
+    "lang": "en-us",
+    "name": "My Tracks",
+    "short_name": "mytracks",
+    "description": "Import, export and visualize GPS tracks",
+    "scope": "/mytracks/",
+    "start_url": "/mytracks/index.html",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/mytracks/media/icon512.png",
+            "sizes": "512x512"
+        }
+    ],
+    "file_handlers": [
+        {
+            "action": "/mytracks/",
+            "accept": {
+                "text/xml": [
+                    ".gpx"
+                ]
+            }
+        }
+    ],
+    "protocol_handlers": [
+        {
+            "protocol": "geo",
+            "url": "/mytracks/?show_place=%s"
+        }
+    ],
+    "display_override": ["window-controls-overlay"],
+    "shortcuts" : [
+        {
+          "name": "Show all tracks",
+          "url": "/mytracks/?show_all=true",
+          "description": "Show all of my tracks",
+          "icons": [{ "src": "/mytracks/media/show192.png", "sizes": "192x192" }]
+        },
+        {
+          "name": "Hide all tracks",
+          "url": "/mytracks/?show_all=false",
+          "description": "Hide all of my tracks",
+          "icons": [{ "src": "/mytracks/media/hide192.png", "sizes": "192x192" }]
+        }
+    ],
+    "url_handlers": [
+        {
+          "origin": "https://patrickbrosset.com"
+        }
+    ]
+}

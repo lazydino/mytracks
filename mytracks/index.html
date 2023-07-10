@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="has-control-overlay">
+<head>
+    <meta charset="utf-8">
+    <title>My Tracks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="black">
+    <link rel="icon" href="/mytracks/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="app">
+        <div class="sidebar">
+            <div class="search">
+                <input type="text" placeholder="Search tracks">
+            </div>
+            <div class="toolbar">
+                <label class="link">
+                    Import track
+                    <input type="file" class="import-button" />
+                </label>
+                <button class="link show-all">Show all</button>
+                <button class="link hide-all">Hide all</button>
+            </div>
+            <ul class="tracks"></ul>
+        </div>
+        <div id="map-container"></div>
+    </main>
+    <div class="drag"></div>
+    <script src="bundle.js"></script>
+    <script src="https://www.bing.com/api/maps/mapcontrol?&key=AkC8xsYIHIgmYG0cA3ZrLvooww9ONg68yAJvCbn82x_VuDc9E4IqYGnKI4PF-yG4"></script>
+</body>
+</html>
